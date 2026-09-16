@@ -14,7 +14,7 @@ html iPSC.html
 
 track riboseq
 type bigWig
-bigDataUrl https://doi.org/10.6084/m9.figshare.33867832
+bigDataUrl https://figshare.com/ndownloader/files/68744404
 shortLabel riboseq
 longLabel merged Ribo-seq reads
 html iPSC.html
