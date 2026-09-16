@@ -11,3 +11,10 @@ bigDataUrl pep_output.bb
 shortLabel proteome
 longLabel Peptides detected in timsTOF experiments
 html iPSC.html
+
+track riboseq
+type bigWig
+bigDataUrl https://doi.org/10.6084/m9.figshare.33867832
+shortLabel riboseq
+longLabel merged Ribo-seq reads
+html iPSC.html
