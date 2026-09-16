@@ -1,0 +1,13 @@
+track translatome
+type bigBed 12
+bigDataUrl supplemented_collaborator_translatome.bb
+shortLabel translatome
+longLabel ORFanage + RiboTIE translatome
+html iPSC.html
+
+track proteome
+type bigBed 6
+bigDataUrl pep_output.bb
+shortLabel proteome
+longLabel Peptides detected in timsTOF experiments
+html iPSC.html

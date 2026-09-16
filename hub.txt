@@ -1,0 +1,6 @@
+hub LRS_Astrocytes_Proteogenomic_Atlas
+shortLabel LRS_Astrocytes_Proteogenomic_Atlas
+longLabel Long-read proteogenomic atlas of iPSC-derved astrocytes
+genomesFile genomes.txt
+email nuoxu.xu@mail.utoronto.ca
+descriptionUrl https://triplab.org/
