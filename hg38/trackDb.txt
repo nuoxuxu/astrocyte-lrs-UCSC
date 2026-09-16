@@ -14,7 +14,7 @@ html iPSC.html
 
 track riboseq
 type bigWig
-bigDataUrl https://figshare.com/ndownloader/files/68744404
+bigDataUrl https://github.com/nuoxuxu/astrocyte-lrs-UCSC/releases/download/test/merged_riboseq.bw
 shortLabel riboseq
 longLabel merged Ribo-seq reads
 html iPSC.html
