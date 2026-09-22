@@ -1,8 +1,15 @@
+track transcriptome
+type bigBed 12
+bigDataUrl orfanage.bb
+shortLabel transcriptome
+longLabel ORFanage-predicted transcripts plus non-coding transcripts
+html iPSC.html
+
 track translatome
 type bigBed 12
-bigDataUrl supplemented_collaborator_translatome.bb
+bigDataUrl collaborator.bb
 shortLabel translatome
-longLabel ORFanage + RiboTIE translatome
+longLabel ORFanage + RiboTIE + collaborator filtering translatome
 html iPSC.html
 
 track proteome
