@@ -3,14 +3,14 @@ type bigBed 12
 bigDataUrl orfanage.bb
 shortLabel transcriptome
 longLabel ORFanage-predicted transcripts plus non-coding transcripts
-html iPSC.html
+html astrocytes.html
 
 track translatome
 type bigBed 12
 bigDataUrl collaborator.bb
 shortLabel translatome
 longLabel ORFanage + RiboTIE + collaborator filtering translatome
-html iPSC.html
+html astrocytes.html
 
 track proteome
 type bigGenePred
@@ -26,5 +26,8 @@ track riboseq
 type bigWig
 bigDataUrl https://github.com/nuoxuxu/astrocyte-lrs-UCSC/releases/download/test/merged_riboseq.bw
 shortLabel riboseq
-longLabel merged Ribo-seq reads
-html iPSC.html
+longLabel merged Ribo-seq reads (all samples)
+color 0,0,0
+autoScale on
+visibility full
+html astrocytes.html
