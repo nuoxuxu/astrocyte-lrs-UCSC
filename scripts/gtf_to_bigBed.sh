@@ -33,15 +33,6 @@ sort -k1,1 -k2,2n proc/input.bed > proc/input.sorted.bed
 
 bedToBigBed proc/input.sorted.bed proc/hg38.chrom.sizes hg38/collaborator.bb
 
-# Convert peptide GTF to bigBed format
-awk 'BEGIN{OFS="\t"} $3=="exon" {
-    # Find the transcript_id
-    match($0, /transcript_id "([^"]+)"/, a);
-    
-    # Print BED6 with Score (Col 5) set to 0
-    print $1, $4-1, $5, a[1], "0", $7
-}' /scratch/nxu/astrocytes/nextflow_results/proteomic/peptides_collaborator.gtf > proc/peptides.bed
-
-sort -k1,1 -k2,2n proc/peptides.bed > proc/peptides.sorted.bed
-
-bedToBigBed proc/peptides.sorted.bed proc/hg38.chrom.sizes hg38/pep_output.bb
+# Peptide track: bigGenePred built by the astrocyte-lrs pipeline (peptideTrackUCSC in post_RiboTIE.nf),
+# one item per (ORF, peptide) labelled by sequence and colored by NCORF_PROSIT confidence tier
+cp /scratch/nxu/astrocytes/nextflow_results/proteomics/peptides_collaborator.bb hg38/peptides.bb

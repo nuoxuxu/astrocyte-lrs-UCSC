@@ -1,0 +1,12 @@
+<h2>Description</h2>
+<p>FragPipe (timsTOF diaPASEF) peptides at 1% FDR, projected to hg38 through the CDS of the RiboTIE ORF
+they were assigned to. Each item is one (ORF, peptide) pair, named <code>ORF_id|PEPTIDE</code> and
+labelled by peptide sequence; the amino acids are drawn from the genome (genomic codons).</p>
+<h2>Display conventions</h2>
+<p>Items are colored by PROSIT spectral-match confidence (brain-microprotein-atlas rubric: spectral angle
+x backbone fragment coverage), assigned for peptides unique to non-canonical ORFs:
+<span style="color:#006400">green = Strong</span>, <span style="color:#FFD700">gold = Moderate</span>,
+<span style="color:#B22222">firebrick = Weak</span>, <span style="color:#808080">grey = Insufficient or not graded</span>.</p>
+<h2>Methods</h2>
+<p>Built by <code>bin/make_peptide_gtf_file.py</code> (peptideTrackUCSC, post_RiboTIE.nf) in the astrocyte-lrs
+pipeline; tiers from the NCORF_PROSIT subworkflow.</p>

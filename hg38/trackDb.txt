@@ -13,11 +13,14 @@ longLabel ORFanage + RiboTIE + collaborator filtering translatome
 html iPSC.html
 
 track proteome
-type bigBed 6
-bigDataUrl pep_output.bb
+type bigGenePred
+bigDataUrl peptides.bb
 shortLabel proteome
-longLabel Peptides detected in timsTOF experiments
-html iPSC.html
+longLabel Peptides detected in timsTOF experiments, colored by PROSIT confidence (green=Strong gold=Moderate firebrick=Weak grey=Insufficient/ungraded)
+itemRgb on
+baseColorDefault genomicCodons
+visibility pack
+html peptides.html
 
 track riboseq
 type bigWig
